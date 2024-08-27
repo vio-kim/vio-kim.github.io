@@ -1698,14 +1698,14 @@ input:checked + .slider:before {
 .team .swiper .swiper-wrapper .swiper-slide .card .team-heading h6 {
   text-transform: uppercase;
   line-height: 0.8;
-  font-size: 100px;
+  font-size: 42px;
   display: flex;
-  opacity: 0.5;
+  opacity: 0.8;
   letter-spacing: 22px;
   margin: 88px 0px 16px -161px;
   font-weight: 700;
   text-transform: uppercase;
-  background: linear-gradient(to right, #30CFD0 0%, #801919 100%);
+  background: linear-gradient(to right, #3e8181 0%, #974343 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1760,14 +1760,14 @@ input:checked + .slider:before {
 @media (max-width: 1140px) {
   .team .swiper .swiper-wrapper .swiper-slide .card .team-heading h6 {
     margin: 50px 0px 0px -100px;
-    font-size: 50px;
+    font-size: 42px;
     line-height: 1.5;
   }
 }
 @media (max-width: 576px) {
   .team .swiper .swiper-wrapper .swiper-slide .card .team-heading h6 {
     margin: 0px;
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 .contact {
@@ -2040,3 +2040,36 @@ input:checked + .slider:before {
   visibility: visible;
   pointer-events: auto;
 }/*# sourceMappingURL=style.css.map */
+
+
+.swipe-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: swipeAnimation 1.5s infinite;
+  opacity: 0.7;
+}
+
+@keyframes swipeAnimation {
+  0% {
+      transform: translateX(-50%);
+      opacity: 0.7;
+  }
+  50% {
+      transform: translateX(-60%);
+      opacity: 1;
+  }
+  100% {
+      transform: translateX(-50%);
+      opacity: 0.7;
+  }
+}
+
+.swipe-arrow i {
+  font-size: 30px;
+  color: white;
+}
+
+
+
