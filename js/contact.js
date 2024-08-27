@@ -57,7 +57,7 @@ function sendEmail() {
     var subject = document.getElementById('subject').value;
     var comments = document.getElementById('comments').value;
 
-    var mailtoLink = `mailto:odaulet99@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Имя: " + name + "\nEmail: " + email + "\nСообщение: " + comments)}`;
+    var mailtoLink = `mailto:info@wooshop.kz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Имя: " + name + "\nEmail: " + email + "\nСообщение: " + comments)}`;
 
     window.location.href = mailtoLink;
     return false;  // предотвратить перезагрузку страницы
